@@ -14,11 +14,10 @@ $isOk = false;
   ?>
 -->
 <?php
-if ($isOk){
-  echo 'C\'est ok !!';
-} else {
-  echo 'Ce n\'est pas bon !!!';
-}
-?>
+if ($isOk){ ?>
+  <p>C'est ok !!'</p>
+<?php } else { ?>
+  <p>Ce n'est pas bon !!!'</p>
+<?php } ?>
 </body>
 </html>

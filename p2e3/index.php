@@ -22,20 +22,18 @@ $gender = 'homme';
     <li>Vous êtes une femme et vous êtes mineur</li>
   </ul>
   <p>Gérer tous les cas.</p>
-  <?php
-  if($gender == 'femme' && $age <= '18'){
-    echo 'Vous êtes une femme et vous êtes mineur';
-  } elseif ($gender == 'femme' && $age > '18'){
-    echo 'Vous êtes une femme et vous êtes majeur';
-  } elseif ($gender == 'homme' && $age <= '18') {
-    echo 'vous êtes un homme et vous êtes mineur';
-  } elseif ($gender == 'homme' && $age > '18'){
-    echo 'vous êtes un homme et vous êtes majeur';
-  } else {
-    echo 'Il y a une erreur sur le genre ou sur l\'âge';
-  }
-  ?>
-  <p>l'âge initialisé dans la variable <?= $age;  ?></p>
-  <p>le genre initialisé dans la variable <?= $gender; ?></p>
+  <p>l'âge initialisé dans la variable est : <?= $age;  ?> ans</p>
+  <p>le genre initialisé dans la variable est : <?= $gender; ?></p>
+  <?php if($gender == 'femme' && $age <= '18'){ ?>
+    <p>Vous êtes une femme et vous êtes mineur</p>
+  <?php } elseif ($gender == 'femme' && $age > '18'){ ?>
+    <p>Vous êtes une femme et vous êtes majeur</p>
+  <?php } elseif ($gender == 'homme' && $age <= '18'){ ?>
+    <p>Vous êtes un homme et vous êtes mineur</p>
+  <?php } elseif ($gender == 'homme' && $age > '18'){ ?>
+    <p>Vous êtes un homme et vous êtes majeur'</p>
+  <?php  } else { ?>
+    <p>Il y a une erreur sur le genre ou sur l'âge </p>
+  <?php } ?>
 </body>
 </html>
