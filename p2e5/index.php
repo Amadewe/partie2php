@@ -8,10 +8,10 @@ $gender = 'cheval';
   <title>Exercice 5 partie 2 php</title>
 </head>
 <body>
-  <!-- Traduire ce code avec des if et des else :
-  < ? php
-  echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
-  ? > -->
+  <p> Traduire ce code avec des if et des else :</p>
+  <p>< ? php</p>
+  <p>echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';</p>
+  <p>? > </p>
   <p>La valeur de la variable est : <?= $gender ?>
     <?php if ($gender != 'Homme'){ ?>
       <p>C'est une développeuse !!!</p>

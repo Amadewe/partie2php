@@ -8,11 +8,10 @@ $isOk = true;
   <title>Exercice 7 partie 2 php</title>
 </head>
 <body>
-  <!-- Traduire ce code avec des if et des else :
-  < ? php
-  echo ($isOk == false) ? 'c\'est pas bon !!!' : 'c\'est ok !!';
-  ?>
--->
+  <p>Traduire ce code avec des if et des else :</p>
+  <p>< ? php</p>
+  <p>echo ($isOk == false) ? 'c\'est pas bon !!!' : 'c\'est ok !!';</p>
+  <p>?></p>
 <?php if ($isOk == false){ ?>
   <p>Ce n'est pas bon !!!</p>
 <?php } else { ?>

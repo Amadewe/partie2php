@@ -11,6 +11,9 @@ $isEasyBonus = false;
   <title>Exercice 2 partie 2 php</title>
 </head>
 <body>
+  <p>Créer une variable isEasy de type booléan et l'initialiser avec une valeur.</p>
+  <p>Afficher C'est facile!! si c'est vrai. Dans le cas contraire afficher C'est difficile !!!.</p>
+  <p>Bonus : L'écrire de deux manières différentes.</p>
   <?php if ($isEasy == false){ ?>
     <!-- Afficher C'est facile!! si c'est vrai. -->
     <p>C'est facile</p>

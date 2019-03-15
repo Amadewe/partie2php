@@ -24,14 +24,14 @@ $gender = 'homme';
   <p>Gérer tous les cas.</p>
   <p>l'âge initialisé dans la variable est : <?= $age;  ?> ans</p>
   <p>le genre initialisé dans la variable est : <?= $gender; ?></p>
-  <?php if($gender == 'femme' && $age <= '18'){ ?>
+  <?php if($gender == 'femme' && $age <= 18){ ?>
     <p>Vous êtes une femme et vous êtes mineur</p>
-  <?php } elseif ($gender == 'femme' && $age > '18'){ ?>
+  <?php } elseif ($gender == 'femme' AND $age > 18){ ?>
     <p>Vous êtes une femme et vous êtes majeur</p>
-  <?php } elseif ($gender == 'homme' && $age <= '18'){ ?>
+  <?php } elseif ($gender == 'homme' AND $age <= 18){ ?>
     <p>Vous êtes un homme et vous êtes mineur</p>
-  <?php } elseif ($gender == 'homme' && $age > '18'){ ?>
-    <p>Vous êtes un homme et vous êtes majeur'</p>
+  <?php } elseif ($gender == 'homme' AND $age > 18){ ?>
+    <p>Vous êtes un homme et vous êtes majeur</p>
   <?php  } else { ?>
     <p>Il y a une erreur sur le genre ou sur l'âge </p>
   <?php } ?>
