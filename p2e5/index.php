@@ -1,5 +1,5 @@
 <?php
-$gender = 'cheval';
+$gender = 'Homme';
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -10,6 +10,10 @@ $gender = 'cheval';
 <body>
   <p> Traduire ce code avec des if et des else :</p>
   <p>< ? php</p>
+  <!-- on va mettre des ternaires pour les formulaires par exemple -->
+  <!-- le ? va être équivalent à if  -->
+  <!-- le echo va avoir comme action: 'c'est une développeuse  -->
+  <!-- : va être équivalent à else -->
   <p>echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';</p>
   <p>? > </p>
   <p>La valeur de la variable est : <?= $gender ?>

@@ -12,12 +12,13 @@ $magnitude = 5;
   <p>L'échelle de Richter est un outil de mesure qui permet de définir la magnitude de moment d'un tremblement de terre. Cette échelle va de 1 à 9.</p>
   <p>La valeur de magnitude est de :<?= $magnitude; ?></p>
   <p>Information sur le tremblement de terre: </p>
-  <!-- on indique sur quelle variable on travaille  -->
   <!-- switch sert pour les conditions comme if mais le code est moins "lourd" quand il y a plusieurs possibilités de cas -->
+  <!-- il sert pour vérifier ce qu'il y a dans la variable d'ou l'importance du break-->
   <?php
+  // on indique sur quelle variable on travaille
   switch ($magnitude)
   {
-    case 1: // dans le cas où $magnitude vaut 1
+    case 1: // dans le cas où $magnitude vaut 1 (1 est une valeur)
     ?>
     <p>Micro-séisme impossible à ressentir. </p>
     <?php
@@ -63,12 +64,12 @@ $magnitude = 5;
     <p>Séisme capable de tout détruire sur une très vaste zone.</p>
     <?php
     break;
+    // équivalent du else (dans tous les autres cas)
     default:
     ?>
     <p>L'échelle de Richter va de 1 à 9, merci de rentrer une valeur compris dans l\échelle.</p>
     <?php
   }
   ?>
-
 </body>
 </html>
